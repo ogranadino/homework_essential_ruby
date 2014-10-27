@@ -34,6 +34,30 @@ principal_amount = 200000.0
 # Your code goes here.
 # You shouldn't have to write code or change code anywhere else.
 
-# loan_quotes.each ...
+
+#while method not working. Maybe later will try a for
+
+num = loan_quotes.size
+loan_quotes[0].each {|key, value| if key == "bank"
+    puts "The monthly payment from #{value}"
+    else
+      puts "will be #{pmt(value, number_of_monthly_payments, principal_amount).round(2)}"
+    end }
+
+num = loan_quotes.size
+loan_quotes[1].each {|key, value| if key == "bank"
+    puts "The monthly payment from #{value}"
+    else
+      puts "will be #{pmt(value, number_of_monthly_payments, principal_amount).round(2)}"
+    end }
+
+num = loan_quotes.size
+loan_quotes[2].each {|key, value| if key == "bank"
+    puts "The monthly payment from #{value}"
+    else
+      puts "will be #{pmt(value, number_of_monthly_payments, principal_amount).round(2)}"
+    end }
+
+
 
 # ==============================================================
